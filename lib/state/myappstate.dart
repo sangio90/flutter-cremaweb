@@ -12,10 +12,8 @@ class MyAppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  void toggleFavorite({WordPair? pair = null}) {
-    if (null == pair) {
-      pair = current;
-    }
+  void toggleFavorite({WordPair? pair}) {
+    pair ??= current;
     if (favorites.contains(pair)) {
       favorites.remove(pair);
     } else {
