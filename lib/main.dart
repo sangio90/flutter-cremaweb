@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'layouts/home.dart';
+import 'layouts/base.dart';
 import '/state/myappstate.dart';
 
 void main() {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         ),
         // Definizione della "home page"
-        home: HomePage(),
+        home: BaseLayout(),
       ),
     );
   }
